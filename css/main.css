@@ -1,0 +1,77 @@
+
+:root {
+    --border: 4px;
+    --accent: rgb(232, 232, 12);
+    --border-color: #f2f2f2;
+    --dark: #333;
+
+    
+}
+
+body {
+    font-family: verdana;
+    color: var(--dark);
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+}
+
+.container {
+    margin: 4rem auto;
+    width: 400px;
+    padding: 4rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border);
+}
+
+label {
+    font-size: 14px;
+}
+
+input,
+.btnValidar {
+    display: block;
+    padding: 10px 0;
+    width:100%;
+    box-sizing: border-box;
+    outline: 0;
+    border: none;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border);
+}
+
+input {
+    padding-left: 16px;
+}
+
+.btnValidar {
+    margin-top: 1rem;
+    padding:1rem 3rem;
+    width: 100%;
+    background-color: var(--accent);
+    border-radius: var(--border);
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.congratulation-message,
+.sad-message {
+    /* background-color: rgb(210, 228, 204); */
+    /* color: rgb(7, 97, 66); */
+    height: 1.875rem;
+    border-radius: var(--border);
+    text-align: left;
+    padding-left: 3.125rem;
+    line-height: 1.875rem;
+    background-image: url("../assets/svg/smiling.svg");
+    background-repeat: no-repeat;  
+}
+
+.sad-message {
+    background-image: url("../assets/svg/sad.svg");
+    background-repeat: no-repeat;  
+}
